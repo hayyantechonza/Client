@@ -1,0 +1,323 @@
+/*=====================================
+=            Container CSS            =
+=====================================*/
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/*=====  End of Container CSS  ======*/
+
+/*=============================================
+=            Custom Responsive CSS            =
+=============================================*/
+
+@media (max-width: 1200px) {
+  .hide_1200 {
+    display: none;
+  }
+
+  .show_1200 {
+    display: block;
+  }
+
+  .show_flex_1200 {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hide_1024 {
+    display: none;
+  }
+
+  .show_1024 {
+    display: block;
+  }
+
+  .show_flex_1024 {
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .working-hours-contnet .heading{
+    text-align: center;
+  }
+  .working-hours-contnet .heading.left span:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .working-hours {
+    flex-direction: column;
+}
+
+.days {
+    max-width: 100%;
+    margin: 0;
+}
+
+.working-hours-contnet {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px 0 0;
+}
+  .single_barber_main {
+    flex-direction: column;
+  }
+
+  .single_barber_sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+  }
+
+  .barber_specialist {
+    flex-flow: row wrap;
+    grid-gap: 20px 50px;
+  }
+
+  .barber_profile {
+    height: 120px;
+  }
+
+  .single_barber_side_item:not(:has(.barber_profile)) {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .single_service_sidebar {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  .single_service_side_item {
+    flex: 1 1 300px;
+  }
+
+  .single_service_main {
+    flex-direction: column;
+  }
+
+  .working_time {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .working_hours_main {
+    flex-direction: column;
+  }
+
+  .about_main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about_img {
+    flex: 0 0 400px;
+    width: unset;
+  }
+
+  .about_content hgroup {
+    align-items: center;
+  }
+
+  .about_content {
+    align-items: center;
+  }
+
+  .hide_992 {
+    display: none;
+  }
+
+  .show_992 {
+    display: block;
+  }
+
+  .show_flex_992 {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .services_grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 100%;
+  }
+
+  .header_icons {
+    flex-direction: row-reverse;
+  }
+
+  .register_icon {
+    margin-left: auto;
+    border-left: 1px solid var(--gray-300);
+    background: var(--primary-500);
+    color: var(--black);
+  }
+
+  .register_icon a {
+    color: var(--black);
+    font-weight: 400;
+  }
+
+  .hide_768 {
+    display: none;
+  }
+
+  .show_768 {
+    display: block;
+  }
+
+  .show_flex_768 {
+    display: flex;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery_grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .gallery_img {
+    height: 200px !important;
+  }
+
+  .gallery_item {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+
+  .hide_650 {
+    display: none;
+  }
+
+  .show_650 {
+    display: block;
+  }
+
+  .show_flex_650 {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .prim_header_main {
+    justify-content: center;
+  }
+
+  .hide_600 {
+    display: none;
+  }
+
+  .show_600 {
+    display: block;
+  }
+
+  .show_flex_600 {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .menu_btn {
+    height: 35px;
+    width: 35px;
+    flex: 0 0 35px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .hide_500 {
+    display: none;
+  }
+
+  .service_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+  .show_500 {
+    display: block;
+  }
+
+  .show_flex_500 {
+    display: flex;
+  }
+}
+
+@media (max-width: 425px) {
+  .appointment-form{
+    padding: 20px;
+  }
+  .hero {
+    height: 300px;
+  }
+
+  .hero::before {
+    top: -111.35px;
+    height: calc(100% + 111.35px);
+  }
+
+
+  .hide_425 {
+    display: none;
+  }
+
+  .show_425 {
+    display: block;
+  }
+
+  .show_flex_425 {
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  .hide_375 {
+    display: none;
+  }
+
+  .show_375 {
+    display: block;
+  }
+
+  .show_flex_375 {
+    display: flex;
+  }
+}
+
+/*=====  End of Custom Responsive CSS  ======*/

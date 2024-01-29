@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Barber</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- CSS LINK END -->
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="secondary_header">
+      <div class="container">
+        <div class="sec_header_main">
+          <a href="index.html" class="logo">
+            <img src="images/logo/logo_v2.svg" alt="">
+          </a>
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="barbers.html">Barbers</a></li>
+              <li><a href="appointment.html">Book Appointment</a></li>
+            </ul>
+            <button class="btn menu_btn">
+              <i class="ph-bold ph-list"></i>
+            </button>
+          </nav>
+          <a href="appointment.html" class="btn hide_992">
+            <span>Book now</span>
+            <i class="ph-bold ph-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <!-- Breadcrumb -->
+    <section class="custom_breadcrumb">
+      <div class="container">
+        <div class="breadcrumb_main">
+          <ul class="custom-breadcrumb">
+            <li class="custom-breadcrumb-item">
+              <a href="index.html">
+                <i class="ph ph-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="custom-breadcrumb-item">
+              <a href="services.html">
+                <i class="ph ph-caret-right"></i>
+                <span>Service</span>
+              </a>
+            </li>
+            <li class="custom-breadcrumb-item">
+              <a href="#">
+                <i class="ph ph-caret-right"></i>
+                <span>Beard Trims</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- single service -->
+    <section class="single_service dark not-wave">
+      <div class="container">
+        <div class="single_service_main">
+          <div class="single_service_content">
+            <h2 class="heading left">
+              <span>Beard Trims</span>
+            </h2>
+            <p>Beard Trims barber Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed minus commodi at asperiores ratione atque facilis nesciunt accusantium temporibus voluptatibus debitis quisquam iure ipsam enim vel mollitia eos voluptatum nam soluta ut odio, non tempora cum? Ullam, corporis debitis sint autem qui officia sequi distinctio rem consectetur, sunt error explicabo!</p>
+            <p>Beard Trims barber Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed minus commodi at asperiores ratione atque facilis nesciunt accusantium temporibus voluptatibus debitis quisquam iure ipsam enim vel mollitia eos voluptatum nam soluta ut odio, non tempora cum? Ullam, corporis debitis sint autem qui officia sequi distinctio rem consectetur, sunt error explicabo!</p>
+            <p>Beard Trims barber Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed minus commodi at asperiores ratione atque facilis nesciunt accusantium temporibus voluptatibus debitis quisquam iure ipsam enim vel mollitia eos voluptatum nam soluta ut odio, non tempora cum? Ullam, corporis debitis sint autem qui officia sequi distinctio rem consectetur, sunt error explicabo! Beard Trims barber Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sed minus commodi at asperiores ratione atque facilis nesciunt accusantium temporibus voluptatibus debitis quisquam iure ipsam enim vel mollitia eos voluptatum nam soluta ut odio, non tempora cum? Ullam, corporis debitis sint autem qui officia sequi distinctio rem consectetur, sunt error explicabo!</p>
+            <h3>Features</h3>
+            <ul>
+              <li>
+                <i class="ph-bold ph-arrow-right"></i>
+                <p>Careful shaping and styling of your beard</p>
+              </li>
+              <li>
+                <i class="ph-bold ph-arrow-right"></i>
+                <p>Precision trimming to achieve your desired length</p>
+              </li>
+              <li>
+                <i class="ph-bold ph-arrow-right"></i>
+                <p>Neckline and cheek line detailing</p>
+              </li>
+              <li>
+                <i class="ph-bold ph-arrow-right"></i>
+                <p>Moisturizing and conditioning treatment</p>
+              </li>
+              <li>
+                <i class="ph-bold ph-arrow-right"></i>
+                <p>Expert advice on beard maintenance</p>
+              </li>
+            </ul>
+            <h3>Gallery</h3>
+            <div class="service_gallery">
+              <figure>
+                <img src="images/gallery/gallery_1.webp" alt="">
+              </figure>
+              <figure>
+                <img src="images/gallery/gallery_2.webp" alt="">
+              </figure>
+              <figure>
+                <img src="images/gallery/gallery_3.webp" alt="">
+              </figure>
+              <figure>
+                <img src="images/gallery/gallery_4.webp" alt="">
+              </figure>
+              <figure>
+                <img src="images/gallery/gallery_5.webp" alt="">
+              </figure>
+              <figure>
+                <img src="images/gallery/gallery_6.webp" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="single_service_sidebar">
+            <div class="single_service_side_item">
+              <h4>Booking:</h4>
+              <form class="single_service_booking">
+                <div class="single_service_book_item">
+                  <strong>Price:</strong>
+                  <p>40$</p>
+                </div>
+                <div class="single_service_book_item">
+                  <strong>Duration:</strong>
+                  <p>15 mint</p>
+                </div>
+                <div class="single_service_book_item">
+                  <select id="barbers" class="select2 form-control">
+                    <option value="john-doe">John Doe</option>
+                    <option value="jane-smith">Jane Smith</option>
+                    <option value="sam-wilson">Sam Wilson</option>
+                  </select>
+                </div>
+                <button class="btn">
+                  <span>Book now</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- working hours -->
+    <section class="working_hours ">
+      <div class="container">
+        <div class="working-hours">
+          <div class="working-hours-contnet">
+            <h4 class="heading left no_m"><span>Stylish Cuts & Convenience – Check Out Our Working Hours!</span></h4>
+            <p>Elevate your style at Cuts & Styles, where expert barbers redefine grooming precision. Experience the epitome of tailored cuts and personalized service.</p>
+            <a href="appointment.html" class="btn">
+              <span>book appointment</span>
+            </a>
+          </div>
+          <div class="days">
+            <h4>Working hour</h4>
+            <div class="day">
+              <span class="day_name">Monday</span>
+              <span class="line"></span>
+              <span class="day_time">9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="day">
+              <span class="day_name">Tuesday</span>
+              <span class="line"></span>
+              <span class="day_time">9:30 AM - 7:00 PM</span>
+            </div>
+            <div class="day">
+              <span class="day_name">Wednesday</span>
+              <span class="line"></span>
+              <span class="day_time">10:00 AM - 6:30 PM</span>
+            </div>
+            <div class="day">
+              <span class="day_name">Thursday</span>
+              <span class="line"></span>
+              <span class="day_time">8:30 AM - 5:30 PM</span>
+            </div>
+            <div class="day">
+              <span class="day_name">Friday</span>
+              <span class="line"></span>
+              <span class="day_time">10:30 AM - 8:00 PM</span>
+            </div>
+            <div class="day">
+              <span class="day_name">Saturday</span>
+              <span class="line"></span>
+              <span class="day_time">11:00 AM - 4:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="subs_wrapper">
+        <hgroup>
+          <h5 class="footer_heading">Subscribe to our newsletter</h5>
+          <p>Subscribe to newsletter and you will discount to our courses nnd everyday exclusive at about the masterclases.</p>
+        </hgroup>
+        <form class="subscribe_form" action="#" method="post">
+          <input type="email" id="email" name="email" class="subscribe_input" placeholder="Your email address" required>
+          <button type="submit" class="btn">
+            <span>Subscribe</span>
+          </button>
+        </form>
+      </div>
+      <div class="footer_grid">
+        <div class="footer_column">
+          <a href="#" class="logo">
+            <img src="images/logo/logo_v2.svg" alt="">
+          </a>
+          <p>Your description goes here. It can provide a brief overview of your services or any other relevant information.</p>
+          <!-- <ul class="footer_contact">
+            <li>
+              <i class="ph-duotone ph-phone-call"></i>
+              <span>+91 123 456 8</span>
+            </li>
+            <li>
+              <i class="ph-duotone ph-envelope-simple"></i>
+              <span>example@example.com</span>
+            </li>
+            <li>
+              <i class="ph-duotone ph-map-pin-line"></i>
+              <span>123 Main Street, Cityville</span>
+            </li>
+          </ul> -->
+          <div class="social_icons">
+            <div class="icon facebook">
+              <i class="ph-duotone ph-facebook-logo"></i>
+            </div>
+            <div class="icon twitter">
+              <i class="ph-duotone ph-twitter-logo"></i>
+            </div>
+            <div class="icon instagram">
+              <i class="ph-duotone ph-instagram-logo"></i>
+            </div>
+            <div class="icon linkedin">
+              <i class="ph-duotone ph-linkedin-logo"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer_column">
+          <h5 class="footer_heading">Our Services</h5>
+          <ul class="footer_list">
+            <li>
+              <a href="#haircuts">Haircuts</a>
+            </li>
+            <li>
+              <a href="#beard-trimming">Beard Trimming</a>
+            </li>
+            <li>
+              <a href="#shaves">Shaves</a>
+            </li>
+            <li>
+              <a href="#hairstyling">Hairstyling</a>
+            </li>
+            <li>
+              <a href="#coloring">Coloring</a>
+            </li>
+            <li>
+              <a href="#facials">Facials</a>
+            </li>
+            <li>
+              <a href="#waxing">Waxing</a>
+            </li>
+            <li>
+              <a href="#appointments">Appointments</a>
+            </li>
+            <li>
+              <a href="#haircuts">Haircuts</a>
+            </li>
+            <li>
+              <a href="#beard-trimming">Beard Trimming</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_column">
+          <h5 class="footer_heading">Top Barbers</h5>
+          <ul class="footer_working_hour">
+            <li>
+              <p class="day_name">Monday</p>
+              <p class="day_time">9:00 AM - 6:00 PM</p>
+            </li>
+            <li>
+              <p class="day_name">Tuesday</p>
+              <p class="day_time">9:30 AM - 7:00 PM</p>
+            </li>
+            <li>
+              <p class="day_name">Wednesday</p>
+              <p class="day_time">10:00 AM - 6:30 PM</p>
+            </li>
+            <li>
+              <p class="day_name">Thursday</p>
+              <p class="day_time">8:30 AM - 5:30 PM</p>
+            </li>
+            <li>
+              <p class="day_name">Friday</p>
+              <p class="day_time">10:30 AM - 8:00 PM</p>
+            </li>
+            <li>
+              <p class="day_name">Saturday</p>
+              <p class="day_time">11:00 AM - 4:00 PM</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="copyright_main">
+          <p>Copyright © 2023 Hayyan. All Rights Reserved.</p>
+          <ul class="rules_links">
+            <a href="#">terms & conditions</a>
+            <a href="#">privacy policy</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JS LINK -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/swiper.bundle.min.js"></script>
+  <script src="js/phosphor-icon.js"></script>
+  <script src="js/select2.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- JS LINKS END -->
+</body>
+
+</html>
